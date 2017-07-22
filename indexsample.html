@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>QUIZ APP <sub>powered by Syed Habib</sub></h1>
+    <div id="startQuiz">
+
+        <button id="startButton" onclick="startQuiz();">Start Quiz</button>
+    </div>
+    <div id="questionDiv">
+
+        <p id="timer"></p>
+
+        <p id="ques"></p>
+        <ul>
+            <li><input type="radio" id="option1" autocomplete="off" class="radio" name="radio" onclick="enableNextButton();"><i id="opt1"></i></li>
+            <li><input type="radio" id="option2" autocomplete="off" class="radio" name="radio" onclick="enableNextButton();"><i id="opt2"></i></li>
+            <li><input type="radio" id="option3" autocomplete="off" class="radio" name="radio" onclick="enableNextButton();"><i id="opt3"></i></li>
+        </ul>
+
+        <button id="nextButton" onclick="next();">Next</button>
+    </div>
+
+    <div id="scoreDiv">
+        <table>
+            <tr>
+                <th>Score</th>
+                <th>Correct Answers</th>
+            </tr>
+            <tr>
+                <td id="score"></td>
+                <td id="answer"></td>
+            </tr>
+        </table>
+        <p id="result"> </p>
+
+    </div>
+
+
+
+    <script src="App/app.js"></script>
+</body>
+
+</html>

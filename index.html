@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Java Script Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="h1">
+        <p>
+            Welcome to Quiz Application
+        </p>
+    </div>
+
+    <div class="index">
+        <div class="signup">
+            <h1>
+                Signup
+            </h1>
+            <form>
+                <!--<label>First Name:</label>-->
+                <input type="text" id="fname" title="First Name" placeholder="Enter Your First Name">
+                <h6 id="fn"></h6>
+
+                <!--<label>Last Name:</label>-->
+                <input type="text" id="lname" title="Last Name" placeholder="Enter Your Last Name">
+                <h6 id="ln"></h6>
+                <!--<label>Email:</label>-->
+                <input type="text" id="email" title="Email" placeholder="Enter Your Email">
+                <h6 id="en"></h6>
+                <!--<label>Password:</label>-->
+                <input type="text" id="password" title="Password" placeholder="Enter Your Password">
+                <h6 id="pn"></h6>
+                <!--<button onclick="signup();"> Signup</button>-->
+                <div class="att">
+                    <a onclick="signup();"> Signup</a>
+
+                </div>
+            </form>
+
+            <h6 id="authMessage"></h6>
+
+
+
+        </div>
+
+        <div class="login">
+            <h1> Login</h1>
+
+            <form>
+                <input type="text" id="lemail" title="Email" placeholder="Enter Your Email">
+                <h6 id="ien"></h6>
+                <input type="text" id="lpassword" title="Password" placeholder="Enter Your Password">
+                <h6 id="ipn"></h6>
+                <div class="latt">
+                    <a onclick="login()"> Login</a>
+
+                </div>
+            </form>
+            <h2 id="lauthMessage"></h2>
+        </div>
+    </div>
+
+
+</body>
+<script src="app.js">
+</script>
+
+</html>
